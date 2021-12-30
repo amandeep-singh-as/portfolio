@@ -1,0 +1,17 @@
+.s-media-list-items{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+body{
+    background-color: #449399;
+}
+
+.highlighted-content{
+    background: linear-gradient(159deg, rgba(49, 60, 78, 1) 0%, rgba(47, 58, 73, 0.98) 100%);
+}
+
+.r-content{
+    background: white
+}
