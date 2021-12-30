@@ -32,3 +32,16 @@ body{
 ::-webkit-scrollbar-thumb{
     background: #f1f1f1
 }
+
+.cust-nav-link{
+    color: white;
+}
+
+.cust-nav-link:hover{
+    font-weight: bold;
+}
+
+.cust-nav-link.active{
+    font-weight: bold;
+    color: white
+}
