@@ -269,16 +269,6 @@ img {
     transform: translateY(0);
 }
 
-@media (max-width: 600px) {
-    .hero__typewriter {
-        min-height: 8rem;
-    }
-
-    .typewriter-line {
-        font-size: clamp(1.6rem, 6vw, 2.5rem);
-    }
-}
-
 /* ========================================
    ABOUT / SECTION GRID
    ======================================== */
@@ -454,7 +444,7 @@ img {
 
 .contact__details {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-lg);
 }
 
@@ -812,10 +802,27 @@ body.panel-open {
         min-height: 80vh;
     }
 
+    .hero__typewriter {
+        min-height: 8rem;
+    }
+
+    .typewriter-line {
+        font-size: clamp(1.3rem, 5vw, 2rem);
+    }
+
+    .contact__link {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
     .project {
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 40px 1fr;
         gap: var(--space-sm);
         padding: var(--space-md) var(--space-sm);
+        margin: 0 calc(var(--space-sm) * -1);
+    }
+
+    .project__title {
+        font-size: 1.5rem;
     }
 
     .project__arrow {
@@ -825,5 +832,13 @@ body.panel-open {
     .contact__details {
         grid-template-columns: 1fr;
         gap: var(--space-md);
+    }
+
+    .detail-panel {
+        width: 100vw;
+    }
+
+    .detail-panel__content {
+        padding: var(--space-xl) var(--space-md);
     }
 }
